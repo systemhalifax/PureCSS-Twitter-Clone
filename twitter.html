@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/timeline.css">
+  <title>Twitter Clone</title>
+</head>
+<body>
+  <nav class="left-sidebar-container">
+    <div class="sidebar-container">
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap-logo">
+          <img class="sidebar-icons twitter-logo" src="logo/twitter-x.svg">
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <div class="home-container">
+            <img class="sidebar-icons" src="icons/home.svg">
+            <div class="home-recent">.</div>
+          </div>
+          <div class="sidebar-icon-info home">Home</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="icons/search.svg">
+          <div class="sidebar-icon-info">Explore</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="icons/notifications.svg">
+          <div class="sidebar-icon-info">Notifications</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="icons/messages.svg">
+          <div class="sidebar-icon-info">Messages</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="icons/grok.svg">
+          <div class="sidebar-icon-info">Grok</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="icons/lists.svg">
+          <div class="sidebar-icon-info">Lists</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="logo/twitter-x.svg">
+          <div class="sidebar-icon-info">Premium</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="icons/profile.svg">
+          <div class="sidebar-icon-info">Profile</div>
+        </div>
+      </div>
+      <div class="sidebar-icons-container">
+        <div class="sidebar-icon-wrap">
+          <img class="sidebar-icons" src="icons/expand.svg">
+          <div class="sidebar-icon-info">More</div>
+        </div>
+      </div>
+      <button class="sidebar-post-button">Post</button>
+      <div class="profile-card">
+        <img class="profile-picture" src="images/avatar.jpg">
+        <div class="profile-info">
+          <div class="profile-name">Reinhard</div>
+          <div class="profile-account">@c_kent40201</div>
+        </div>
+        <div>
+          <img class="more-sidebar-icon" src="icons/more.svg">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="header">
+    <div class="header-item for-you">
+      For you 
+    </div>
+    <div class="header-item following">
+      Following
+    </div>
+    <div>
+      <img class="header-item settings-icon" src="icons/settings.svg" alt="Settings">
+    </div>
+  </header>
+  <main class="main-container">
+    <section>
+      <div class="tweet-container">
+        <div>
+          <img class="profile-picture" src="images/avatar.jpg">
+        </div>
+        <div class="post-options-container">
+          <input class="tweet-input-text" placeholder="What is happening?!"> 
+          <div class="media-icons-container">
+            <div>
+              <img src="icons/media.svg">
+              <img src="icons/gif.svg">
+              <img src="icons/poll.svg">
+              <img src="icons/emoji.svg">
+              <img src="icons/schedule.svg">
+              <img src="icons/location.svg">
+            </div>
+            <button class="post-button">Post</button>
+          </div>
+        </div>
+      </div>
+      <div class="show-posts-container">
+        Show 175 posts
+      </div>
+      <div class="main-posts-container">
+        <div>
+          <img class="profile-picture" src="images/elon-musk.jpg">
+        </div>
+        <div class="main-tweet-container">
+          <div class="user-info-container">
+            <div class="user-info">
+              <div class="user-name">Elon Musk</div>
+            <img src="icons/twitter-verified-badge.svg">
+            <img src="icons/twitter-x-logo-black-round.svg">
+            <div class="user-tag">@elonmusk · 16h</div>
+            </div>
+            <img class="more-icon" src="icons/more.svg">
+          </div>
+          <div class="content-description">
+            How the Federal Reserve works
+          </div>
+          <div>
+            <img class="posts-images" src="posts-images/monopoly.jpg">
+          </div>
+          <div class="media-statistics-container">
+            <div class="media-reply-count">
+              <img class="reply-icon" src="icons/bubble.svg">
+              <div>12K</div>
+            </div>
+            <div class="media-repost-count">
+              <img class="repost-icon" src="icons/repost.svg">
+              <div>74K</div>
+            </div>
+            <div class="media-like-count">
+              <img class="like-icon" src="icons/like.svg">
+              <div>441K</div>
+            </div>
+            <div class="media-view-count">
+              <img class="view-icon" src="icons/views.svg">
+              <div>58M</div>
+            </div>
+            <div class="media-share">
+              <img class="bookmark-icon" src="icons/bookmark.svg">
+              <img class="share-icon" src="icons/share.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-posts-container">
+        <div>
+          <img class="profile-picture" src="images/elon-musk.jpg">
+        </div>
+        <div class="main-tweet-container">
+          <div class="user-info-container">
+            <div class="user-info">
+              <div class="user-name">Elon Musk</div>
+            <img src="icons/twitter-verified-badge.svg">
+            <img src="icons/twitter-x-logo-black-round.svg">
+            <div class="user-tag">@elonmusk · May 12</div>
+            </div>
+            <img class="more-icon" src="icons/more.svg">
+          </div>
+          <div class="content-description">
+            You really feel that bass
+          </div>
+          <div>
+            <img class="posts-images" src="posts-images/airpods.jpg">
+          </div>
+          <div class="media-statistics-container">
+            <div class="media-reply-count">
+              <img class="reply-icon" src="icons/bubble.svg">
+              <div>28K</div>
+            </div>
+            <div class="media-repost-count">
+              <img class="repost-icon" src="icons/repost.svg">
+              <div>69K</div>
+            </div>
+            <div class="media-like-count">
+              <img class="like-icon" src="icons/like.svg">
+              <div>664K</div>
+            </div>
+            <div class="media-view-count">
+              <img class="view-icon" src="icons/views.svg">
+              <div>97M</div>
+            </div>
+            <div class="media-share">
+              <img class="bookmark-icon" src="icons/bookmark.svg">
+              <img class="share-icon" src="icons/share.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-posts-container">
+        <div>
+          <img class="profile-picture" src="images/karun.jpg">
+        </div>
+        <div class="main-tweet-container">
+          <div class="user-info-container">
+            <div class="user-info">
+              <div class="user-name">Karun</div>
+              <img src="icons/twitter-verified-badge.svg">
+              <div class="user-tag">@karunpal ·18h</div>
+            </div>
+            <img class="more-icon" src="icons/more.svg">
+          </div>
+          <div class="content-description">
+            Introverts are kind souls, but if you piss them off, they'll ignore your whole existence. They love. They care. They reciprocate. But some people take advantage of their kindness. Over and over again. But once they've had it, they don't revenge, they just disappear in silence.
+          </div>
+          <div class="media-statistics-container">
+            <div class="media-reply-count">
+              <img class="reply-icon" src="icons/bubble.svg">
+              <div>163</div>
+            </div>
+            <div class="media-repost-count">
+              <img class="repost-icon" src="icons/repost.svg">
+              <div>3K</div>
+            </div>
+            <div class="media-like-count">
+              <img class="like-icon" src="icons/like.svg">
+              <div>12K</div>
+            </div>
+            <div class="media-view-count">
+              <img class="view-icon" src="icons/views.svg">
+              <div>434K</div>
+            </div>
+            <div class="media-share">
+              <img class="bookmark-icon" src="icons/bookmark.svg">
+              <img class="share-icon" src="icons/share.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-posts-container">
+        <div>
+          <img class="profile-picture" src="images/troll-football.jpg">
+        </div>
+        <div class="main-tweet-container">
+          <div class="user-info-container">
+            <div class="user-info">
+              <div class="user-name">Troll Football</div>
+            <img src="icons/twitter-verified-badge.svg">
+            <div class="user-tag">@TrollFootball · 14h</div>
+            </div>
+            <img class="more-icon" src="icons/more.svg">
+          </div>
+          <div class="content-description">
+            Anthony isn't him
+          </div>
+          <div>
+            <img class="posts-images" src="posts-images/football.jpg">
+          </div>
+          <div class="media-statistics-container">
+            <div class="media-reply-count">
+              <img class="reply-icon" src="icons/bubble.svg">
+              <div>959</div>
+            </div>
+            <div class="media-repost-count">
+              <img class="repost-icon" src="icons/repost.svg">
+              <div>9.8K</div>
+            </div>
+            <div class="media-like-count">
+              <img class="like-icon" src="icons/like.svg">
+              <div>106K</div>
+            </div>
+            <div class="media-view-count">
+              <img class="view-icon" src="icons/views.svg">
+              <div>6.7M</div>
+            </div>
+            <div class="media-share">
+              <img class="bookmark-icon" src="icons/bookmark.svg">
+              <img class="share-icon" src="icons/share.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-posts-container">
+        <div>
+          <img class="profile-picture" src="images/taylor-swift.jpg">
+        </div>
+        <div class="main-tweet-container">
+          <div class="user-info-container">
+            <div class="user-info">
+              <div class="user-name">Taylor Swift</div>
+              <img src="icons/twitter-verified-badge.svg">
+              <div class="user-tag">@taylorswift13 · 6h</div>
+            </div>
+            <img class="more-icon" src="icons/more.svg">
+          </div>
+          <div class="content-description">
+            This post is dedicated to the new Tortured Poets section of the Eras Tour (aka Female Rage The Musical!) and everyone who made these memories so magical. To my crew, fellow performers, and band who worked tirelessly in their break to concoct this surprise for you - but mostly for…
+          </div>
+          <div class="show-more">
+            Show more
+          </div>
+          <div class="post-images-grid">
+            <img class="posts-images" src="posts-images/eras-tour-1.jpg">
+            <img class="posts-images" src="posts-images/eras-tour-2.jpg">
+            <img class="posts-images" src="posts-images/eras-tour-3.jpg">
+            <img class="posts-images" src="posts-images/eras-tour-4.jpg">
+          </div>
+          <div class="media-statistics-container">
+            <div class="media-reply-count">
+              <img class="reply-icon" src="icons/bubble.svg">
+              <div>5.1K</div>
+            </div>
+            <div class="media-repost-count">
+              <img class="repost-icon" src="icons/repost.svg">
+              <div>43K</div>
+            </div>
+            <div class="media-like-count">
+              <img class="like-icon" src="icons/like.svg">
+              <div>244K</div>
+            </div>
+            <div class="media-view-count">
+              <img class="view-icon" src="icons/views.svg">
+              <div>4.9M</div>
+            </div>
+            <div class="media-share">
+              <img class="bookmark-icon" src="icons/bookmark.svg">
+              <img class="share-icon" src="icons/share.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-posts-container">
+        <div>
+          <img class="profile-picture" src="images/moment-so-fence.jpg">
+        </div>
+        <div class="main-tweet-container">
+          <div class="user-info-container">
+            <div class="user-info">
+              <div class="user-name">&#x1D453;
+                .
+              </div>
+            <img src="icons/twitter-verified-badge.svg">
+            <div class="user-tag">@momentsofence · 14h</div>
+            </div>
+            <img class="more-icon" src="icons/more.svg">
+          </div>
+          <div class="content-description">
+            Avocado Lego 🥑
+          </div>
+          <div>
+            <img class="posts-images" src="posts-images/avocado-lego.jpg">
+          </div>
+          <div class="media-statistics-container">
+            <div class="media-reply-count">
+              <img class="reply-icon" src="icons/bubble.svg">
+              <div>239</div>
+            </div>
+            <div class="media-repost-count">
+              <img class="repost-icon" src="icons/repost.svg">
+              <div>10K</div>
+            </div>
+            <div class="media-like-count">
+              <img class="like-icon" src="icons/like.svg">
+              <div>166K</div>
+            </div>
+            <div class="media-view-count">
+              <img class="view-icon" src="icons/views.svg">
+              <div>3.9M</div>
+            </div>
+            <div class="media-share">
+              <img class="bookmark-icon" src="icons/bookmark.svg">
+              <img class="share-icon" src="icons/share.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <aside class="right-sidebar">
+      <div class="right-sidebar-container">
+        <div class="search-container">
+          <img class="search-icon" src="icons/search.svg">
+          <input class="search-input" type="text" placeholder="Search">
+        </div>
+        <div class="premium-subscribe-container">
+          <div class="subscribe-premium">Subscribe to Premium</div>
+          <div class="premium-features">
+            Subscribe to unlock new features and if eligible, receive a share of ads revenue.
+          </div>
+          <button class="subscribe-button">Subscribe</button>
+        </div>
+        <div class="trends-container">
+          <div class="trends-for-you">Trends for you</div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Trending in Philippines</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>#MSI2024</div>
+              <img class="msi-icon" src="icons/msi-emoji-2024.png">
+            </div>
+            <div class="posts-count">7,090 posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Trending in Philippines</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>Bam Aquino</div>
+            </div>
+            <div class="posts-count">1,257 posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Trending in Philippines</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>ACTOR VERNON</div>
+            </div>
+            <div class="posts-count">1,987 posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Music · Trending</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>Gloc-9</div>
+            </div>
+            <div class="posts-count">3,599 posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Trending in Philippines</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>Dylan</div>
+            </div>
+            <div class="posts-count">25.2K posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Trending in Philippines</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>#NiallHoranInManila</div>
+            </div>
+            <div class="posts-count">3,605 posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Music · Trending</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>minho</div>
+            </div>
+            <div class="posts-count">22.6K posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Music · Trending</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>B1NI TOPS SPOTIFY</div>
+            </div>
+            <div class="posts-count">20.8K posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Trending in Philippines</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>Yoshi</div>
+            </div>
+            <div class="posts-count">37.9K posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="trending-in-philippines">
+              <div>Trending in Philippines</div>
+              <img class="more-trends-icon" src="icons/more.svg">
+            </div>
+            <div class="trending">
+              <div>#HighStreetNewEra</div>
+            </div>
+            <div class="posts-count">8,345 posts</div>
+          </div>
+          <div class="trending-category-container">
+            <div class="show-more-trend">Show more</div>
+          </div>
+        </div>
+        <div class="who-to-follow-container">
+          <div class="who-to-follow">Who to follow</div>
+          <div class="recommendations-container">
+            <div class="recommendations">
+              <div class="profile-container">
+                <div>
+                  <img class="profile-picture" src="images/andrew-tate.jpg">
+                </div>
+                <div>
+                  <div class="profile-info-follow">
+                    <div class="profile-name-follow">Andrew Tate</div>
+                    <img src="icons/twitter-verified-badge.svg">
+                    <img src="icons/horse-icon.jpg">
+                  </div>
+                  <div class="profile-tag">
+                    @Cobratate
+                  </div>
+                </div>
+              </div>
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+          <div class="recommendations-container">
+            <div class="recommendations">
+              <div class="profile-container">
+                <div>
+                  <img class="profile-picture" src="images/nasa.jpg">
+                </div>
+                <div>
+                  <div class="profile-info-follow">
+                    <div class="profile-name-follow">NASA</div>
+                    <img src="icons/twitter-verified-badge.svg">
+                  </div>
+                  <div class="profile-tag">
+                    @NASA
+                  </div>
+                </div>
+              </div>
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+          <div class="recommendations-container">
+            <div class="recommendations">
+              <div class="profile-container">
+                <div>
+                  <img class="profile-picture" src="images/bill-gates.jpg">
+                </div>
+                <div>
+                  <div class="profile-info-follow">
+                    <div class="profile-name-follow">Bill Gates</div>
+                    <img src="icons/twitter-verified-badge.svg">
+                  </div>
+                  <div class="profile-tag">
+                    @BillGates
+                  </div>
+                </div>
+              </div>
+              <button class="follow-button">Follow</button>
+            </div>
+          </div>
+          <div class="show-more-container">
+            <div class="show-more-recommended">
+              Show more
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="terms-of-service">
+            <div>Terms of Service</div>
+            <div>Privacy Policy</div>
+            <div>Cookie Policy</div>
+          </div>
+          <div class="accessibility">
+            <div>Accessibility</div>
+            <div>Ads info</div>
+            <div class="more-container">
+              <div>More</div>
+              <img class="more" src="icons/more-gray.svg">
+            </div>
+            <div>© 2024 X Corp.</div>
+          </div>
+        </footer>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>

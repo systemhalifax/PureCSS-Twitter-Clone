@@ -1,0 +1,38 @@
+.header {
+  display: grid;
+  grid-template-columns: 300px 255px 30px; /* Adjust the width of the settings icon */
+  width: 600px;
+  height: 53px;
+  border: 1px solid rgb(247, 243, 243);
+  position: fixed;
+  background-color:rgba(255, 255, 255, 0.96);
+  top: 0;
+}
+
+/* .header > *: This selects all direct children of the .header class. */
+.header > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.for-you:hover,
+.following:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.settings-icon {
+  padding: 7px 7px;
+  border-radius: 50%;
+  width: 20px;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.settings-icon:hover {
+  background-color:  rgba(29, 155, 240, 0.1);
+}

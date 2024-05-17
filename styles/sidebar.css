@@ -1,0 +1,362 @@
+.left-sidebar-container {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 317px;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 10px;
+  width: 242px;
+}
+
+.sidebar-icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-icon-wrap-logo {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.sidebar-icon-wrap-logo:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.sidebar-icon-wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 20px;
+  padding-left: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.sidebar-icon-wrap:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.home-container {
+  position: relative;
+}
+
+.home-recent {
+  position: absolute;
+  top: -51px;
+  left: 25px;
+  font-size: 60px;
+  color: rgb(29, 153, 237);
+}
+
+.sidebar-icons {
+  margin-right: 20px;
+  margin-left: 10px;
+  width: 27px;
+}
+
+.sidebar-icon-info {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.home {
+  font-weight: bold;
+}
+
+.sidebar-post-button {
+  background-color: rgb(29, 153, 237);
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  margin-right: 15px;
+  padding: 17px;
+  cursor: pointer;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-account {
+  color: gray;
+}
+
+.more-sidebar-icon {
+  margin-left: 60px;
+  margin-top: 5px;
+  width: 20px;
+}
+
+
+/*************right sidebar****************************/
+
+.right-sidebar {
+  width: 350px;
+}
+
+.right-sidebar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  width: 350px;
+  margin-left: 30px;
+  position: sticky;
+  top: -850px;
+  background-color: white;
+}
+
+.search-container {
+  position: fixed;
+  width: 350px;
+  top: 0;
+  background-color: white;
+  padding-top: 5px;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 20px;
+  pointer-events: none;
+  /* top: 14px;
+  left: 15px;
+  width: 16px; */
+  z-index: 1;
+}
+
+.search-input {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  padding: 13px 10px 13px 50px; /* Adjust padding to accommodate the icon on the left */
+  font-size: 16px;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box; /* The box-sizing: border-box; property includes padding and border in the element's total width and height, 
+  making layout calculations easier and ensuring the element stays within its specified dimensions. */
+}
+
+.premium-subscribe-container {
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.subscribe-premium,
+.who-to-follow {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.premium-features {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.subscribe-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  padding: 10px 16px 10px 16px;
+  border-radius: 25px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.trends-container,
+.who-to-follow-container {
+  border: 1px solid #ebebeb;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.trends-for-you {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.trending-category-container {
+  padding-top: 10px;
+  transition: background-color 0.15s;
+}
+
+.trending-category-container:hover{
+  background-color: rgb(238, 238, 238);
+}
+
+.trending-in-philippines {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 13px;
+  color: rgb(70, 69, 69);
+}
+
+.more-trends-icon,
+.msi-icon {
+  width: 20px;
+}
+
+.trending {
+  display: flex;
+  gap: 2px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.posts-count {
+  font-size: 13px;
+  color: rgb(70, 69, 69);
+  margin-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.show-more-trend,
+.show-more-recommended {
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.recommendations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  transition: background-color 0.15s;
+}
+
+.recommendations:hover,
+.show-more-container:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.profile-container {
+  display: flex;
+}
+
+.profile-info-follow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.profile-name-follow {
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.profile-tag {
+  color: gray;
+  margin-left: 8px;
+}
+
+.profile-info-follow img {
+  border-radius: 50%;
+  width: 17px;
+}
+
+.follow-button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-right: 10px;
+  padding: 8px 15px 8px 15px;
+  border-radius: 20px;
+}
+
+.show-more-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer {
+ margin-bottom: 10px;
+}
+
+.terms-of-service,
+.accessibility {
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  color: gray;
+  width: 320px;
+  cursor: pointer;
+}
+
+.terms-of-service div,
+.accessibility div {
+  transition: text-decoration 0.15s;
+}
+
+.terms-of-service div:hover,
+.accessibility div:hover {
+  text-decoration: underline;
+}
+
+.more-container {
+  display: flex;
+  align-items: center;
+}
+
+.more {
+  margin-left: 3px;
+  width: 10px;
+}

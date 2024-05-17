@@ -1,0 +1,224 @@
+.main-container {
+  display: flex;
+}
+
+.tweet-container {
+  display: flex;
+  width: 600px;
+  border: 1px solid rgb(247, 243, 243);
+}
+
+.profile-picture {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.post-options-container{
+  margin-left: 7px;
+  flex: 1;  /* Added flex-grow to fill remaining space */
+}
+
+.tweet-input-text {
+  border: none;
+  width: 99%; /* Changed width to 100% for responsiveness */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.tweet-input-text::placeholder {
+  font-size: 20px;
+}
+
+.media-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+.media-icons-container img{
+  padding: 7px 7px;
+  border-radius: 50%;
+  width: 17px;
+}
+
+/*targets all img hover inside media-icons-container*/
+.media-icons-container img:hover {
+  background-color:  rgba(29, 155, 240, 0.1);
+}
+
+.post-button {
+  background-color: rgb(29, 155, 240);
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* section 2 */
+
+.show-posts-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(29, 155, 240);
+  width: 600px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: -1px;
+  border: 1px solid rgb(247, 243, 243);
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.show-posts-container:hover {
+  background-color: rgba(245, 243, 243, 0.5);
+}
+
+/*section 3*/
+
+.main-posts-container {
+  display: flex;
+  width: 600px;
+  border: 1px solid rgb(247, 243, 243);
+  margin-top: -1px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+
+.main-posts-container:hover {
+  background-color: rgba(245, 243, 243, 0.50);
+}
+
+.main-tweet-container {
+  flex: 1;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.user-info-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+ /* Styles for the first child and onwards for flexbox. If other element like div change the asterisk to div */
+.user-info > *:first-child {
+  margin-right: 5px;
+}
+
+.user-info > *:nth-child(n+2) {
+  /* Styles for the second child and onwards */
+  margin-right: 5px;
+}
+
+.user-info img {
+  border-radius: 50%;
+  width: 17px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-tag {
+  color: gray;
+}
+
+.content-description {
+  margin-bottom: 10px;
+  line-height: 22px;
+  margin-right: 10px;
+}
+
+.show-more {
+  color: rgb(29, 155, 240);
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+/* Adjust the grid container */
+.post-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr)); /* Initially, images have a width of 260px */
+  gap: 1px; /* Adjust the gap between images as needed */
+  margin-right: 10px;
+}
+
+/* Adjust width of images when there's only one */
+.post-images-grid img:first-child:nth-last-child(1) {
+  width: 520px;
+}
+
+.posts-images {
+  width: 97%; /* Ensure images fill their grid cell */
+  height: 97%; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover their container */
+  border-radius: 15px;
+}
+
+.media-statistics-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reply-icon,
+.repost-icon,
+.like-icon,
+.view-icon,
+.bookmark-icon,
+.share-icon,
+.more-icon {
+  width: 17px;
+  cursor: pointer;
+}
+
+.more-icon {
+  margin-right: 15px;
+}
+
+.media-reply-count,
+.media-repost-count,
+.media-like-count,
+.media-view-count {
+  display: flex;
+  align-items: center;
+}
+
+.media-reply-count div,
+.media-repost-count div,
+.media-like-count div,
+.media-view-count div {
+  font-size: 13px;
+  color: gray;
+  margin-left: 10px;
+}
+
+.bookmark-icon {
+  margin-right: 10px;
+}
+
+.share-icon {
+  margin-right: 14px;
+}
